@@ -7,19 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ex4</title>
     <style>
+        body {}
+
+        .container {
+            border: 1px solid red;
+            position: relative;
+            margin: 80px;
+        }
+
         .background {
+            margin: 50px;
             height: 500px;
             background: url('./images/Musee\ du\ Louvre.jpg') center center / cover no-repeat;
             opacity: 1;
+        }
+
+        .background:hover {
+            opacity: .1;
+        }
+
+        h1 {
+            color: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 0;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="background">
-            <h1>Paris</h1>
-        </div>
+        <div class="background"></div>
+        <h1>Paris</h1>
     </div>
 </body>
 

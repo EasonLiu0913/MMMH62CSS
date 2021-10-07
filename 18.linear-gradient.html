@@ -55,7 +55,6 @@
 
         .grad11 {
             background: linear-gradient(to right, rgba(0, 0, 255, 1), rgba(0, 0, 255, 0));
-
         }
 
         .grad12 {
@@ -71,8 +70,45 @@
         }
 
         .grad14 {
-            background: linear-gradient(red 50%, yellow 50%);
+            background: linear-gradient(red 50%, black 50%);
             background-size: 20px 20px;
+        }
+
+        .grad15 {
+            background: linear-gradient(to bottom, rgba(255, 150, 150, 0.523) 50%, rgba(255, 255, 117, 0.51) 50%), linear-gradient(to right, rgb(255, 150, 150) 50%, rgb(255, 255, 117) 50%);
+            background-size: 20px 20px;
+        }
+
+        .grad16 {
+            background: repeating-linear-gradient(deeppink, hotpink 25%);
+        }
+
+        .grad17 {
+            background: radial-gradient(purple, yellow 25%, red 100%);
+        }
+
+        .grad18 {
+            background: radial-gradient(circle, purple, yellow 25%, red 100%);
+        }
+
+        .grad19 {
+            background: radial-gradient(at 80% 80px, red, purple);
+        }
+
+        .grad20 {
+            background: radial-gradient(circle at right bottom, red, purple);
+        }
+
+        .grad21 {
+            background: repeating-radial-gradient(circle, deeppink, orchid 8%, hotpink 16%, deeppink 25%);
+        }
+
+        h1 {
+            font-size: 100px;
+            background: linear-gradient(rgb(251, 151, 151) 20%, rgb(205, 205, 75) 50%, rgb(105, 161, 240) 70%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
         }
     </style>
 </head>
@@ -92,6 +128,15 @@
     <div class="box grad12">grad12</div>
     <div class="box grad13">grad13</div>
     <div class="box grad14">grad14</div>
+    <div class="box grad15">grad15</div>
+    <div class="box grad16">repeat gradient</div>
+    <div class="box grad17">radial gradient</div>
+    <div class="box grad18">radial gradient with circle</div>
+    <div class="box grad19">radial gradient at some point</div>
+    <div class="box grad20">radial gradient with circle at some point</div>
+    <div class="box grad21">repeat radial gradient with circle</div>
+
+    <h1>Hello World</h1>
 </body>
 
 </html>
