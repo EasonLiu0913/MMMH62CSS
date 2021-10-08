@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #faa;
+            margin: 10px;
+            float: left;
+
+            transition: .5s;
+
+            overflow: hidden;
+            transform-origin: right top;
+        }
+
+        .translateX:hover {
+            transform: translateX(100px);
+        }
+
+        .translateY:hover {
+            transform: translateY(100px);
+        }
+
+        .translate:hover {
+            transform: translate(-100px, 100px);
+        }
+
+        .container {
+            width: 800px;
+            height: 500px;
+            outline: 1px solid red;
+        }
+
+        .rotate:hover {
+            background-color: #aff;
+            transform: rotate(-180deg);
+
+        }
+
+        .rotateTranslateX:hover {
+            transform: rotate(-7200deg) translateX(300px);
+        }
+
+        .scale:hover {
+            transform: scale(1.2);
+        }
+
+        .box img {
+            transition: .5s;
+        }
+
+        .pikachu:hover {
+            transform: scale(1.2);
+        }
+
+        .skewX {
+            transform: skewX(30deg);
+        }
+
+        .skewY:hover {
+            transform: skewY(30deg);
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin: 10px;
+        }
+
+        .box2 .box {
+            margin: 0;
+        }
+
+        .box2:hover .box {
+            transform: translateX(300px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box translateX">translateX</div>
+    <div class="box translateY">translateY</div>
+    <div class="box translate">translate</div>
+    <div class="box rotate">rotate</div>
+    <div class="box rotateTranslateX">rotate and translateX</div>
+    <div class="box scale">scale</div>
+
+    <div class="box">
+        <img class="pikachu" src="./images/3.png" alt="">
+    </div>
+
+    <div class="box skewX">skewX</div>
+    <div class="box skewY">skewY</div>
+
+    <div class="box2">
+        <div class="box">box in box2 </div>
+    </div>
+
+
+</body>
+
+</html>

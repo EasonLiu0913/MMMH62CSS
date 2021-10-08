@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vh vw</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        html {
+            /* height: 100%; */
+        }
+
+        body {
+            margin: 0;
+            /* height: 300px; */
+            /* height: 100%; */
+        }
+
+        .box {
+            /* 繼承自 viewport，要小心爆版的問題 */
+            width: 100vw;
+            /* safari 支援度要注意 */
+            height: 50vh;
+            background-color: rgb(5, 133, 112);
+        }
+
+        .box2 {
+            /* 繼承自 body */
+            width: 100%;
+            height: 50vh;
+            background-color: rgb(17, 11, 86);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        .box33
+    </div>
+    <div class="box2">
+        .box33
+    </div>
+</body>
+
+</html>
