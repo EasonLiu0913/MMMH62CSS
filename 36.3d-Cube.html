@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d cube</title>
+    <style>
+        body {
+            /* margin: 200px; */
+            padding: 50px;
+        }
+
+        .camera {
+            perspective: 800px;
+            /* margin: 50px; */
+            perspective-origin: 50% -150px;
+        }
+
+        .cube {
+            transform-style: preserve-3d;
+        }
+
+        .cube div {
+            display: block;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+
+        .left {
+            background-color: #faf;
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+
+        .right {
+            background-color: #aaf;
+            transform: rotateY(90deg) translateZ(100px);
+        }
+
+        .top {
+            background-color: rgb(222, 222, 10);
+            transform: rotateX(90deg) translateZ(100px);
+        }
+
+        .bottom {
+            background-color: green;
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="camera">
+        <div class="cube">
+            <div class="left">左</div>
+            <div class="right">右</div>
+            <div class="top">上</div>
+            <div class="bottom">下</div>
+        </div>
+    </div>
+</body>
+
+</html>
