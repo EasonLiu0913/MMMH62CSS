@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex demo</title>
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.css">
+
+    <style>
+        .container {
+            width: 960px;
+            margin: 40px auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .row {
+            display: flex;
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+
+        .justify-content-between {
+            justify-content: space-between;
+        }
+
+        .justify-content-center {
+            justify-content: center;
+        }
+
+        .align-items-center {
+            align-items: center;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .nav-left,
+        .nav-logo,
+        .nav-right {
+            width: 33.33%;
+            border: 1px solid red;
+        }
+
+        .nav-left a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .nav-logo {
+            text-align: center;
+        }
+
+        .nav-right {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .nav-right i {
+            margin: 5px;
+        }
+
+        .shopnow {
+            /* display: flex;
+            align-items: center; */
+            /* height: 40px; */
+
+            text-decoration: none;
+            color: #fff;
+            background-color: #777;
+            align-self: center;
+            padding: 20px;
+        }
+
+        .img-300 {
+            width: 300px;
+            height: 300px;
+            background-color: #ccc;
+        }
+
+        .img-57 {
+            width: 500px;
+            height: 700px;
+            background-color: #ccc;
+        }
+
+        .sub-title {
+            width: 300px;
+            margin: 100px auto;
+            font-weight: bold;
+        }
+
+        .mt-100 {
+            margin-top: 100px;
+        }
+
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .link-lookbook a {
+            color: #ccc;
+            /* text-decoration: none; */
+            font-size: 2rem;
+            margin: 20px auto;
+        }
+
+        .img-80 {
+            width: 70%;
+            height: 500px;
+            background-color: #ffa;
+        }
+
+        .img-20 {
+            width: 30%;
+            height: 500px;
+            background-color: #aaf;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="nav-left">
+                    <a href="#">Shop</a>
+                    <a href="#">Lookbook</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="nav-logo">
+                    Almeda
+                </div>
+                <div class="nav-right">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="row justify-content-between">
+                <h2>New In</h2>
+                <a class="shopnow" href="#">Shop Now</a>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="items">
+                    <div class="img-300">
+
+                    </div>
+
+                    <span>Linen Top / Blue</span>
+                </div>
+                <div class="items">
+                    <div class="img-300">
+
+                    </div>
+
+                    <span>Linen Top / Blue</span>
+                </div>
+                <div class="items">
+                    <div class="img-300">
+
+                    </div>
+
+                    <span>Linen Top / Blue</span>
+                </div>
+            </div>
+
+            <div class="row sub-title">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, doloribus qui! Nihil
+                    velit</span>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="product-info">
+                    <div class="img-300"></div>
+                    <p>Lisa Shirt</p>
+                    <p>$50.00</p>
+                </div>
+
+                <div class="product-model">
+                    <div class="img-57"></div>
+                </div>
+            </div>
+
+            <div class="row justify-content-between mt-100">
+                <div class="product-info order-2">
+                    <div class="img-300"></div>
+                    <p>Lisa Shirt</p>
+                    <p>$50.00</p>
+                </div>
+
+                <div class="product-model order-1">
+                    <div class="img-57"></div>
+                </div>
+            </div>
+
+            <div class="row link-lookbook">
+                <a href="#">View Lookbook</a>
+            </div>
+
+            <div class="row">
+                <div class="img-80"></div>
+                <div class="img-20"></div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <div class="row column align-items-center">
+                <p>Sign up to receive news and updates.</p>
+                <div class="d-flex">
+                    <input type="text" placeholder="Email Address">
+                    <button>Sign up</button>
+                </div>
+                <p>Made with Squarespace</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
