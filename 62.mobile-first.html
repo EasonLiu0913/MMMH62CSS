@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile first</title>
+    <style>
+        /* 從手機出發 */
+        h1 {
+            color: blue;
+        }
+
+        @media screen and (min-width:576px) {
+            h1 {
+                color: purple;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            h1 {
+                color: green;
+            }
+        }
+
+        @media screen and (min-width:992px) {
+            h1 {
+                color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+</body>
+
+</html>
