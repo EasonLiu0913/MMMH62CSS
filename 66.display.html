@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <style>
+        .eason-card {
+            width: 100%;
+            height: 200px;
+            border: 1px solid red;
+        }
+
+        .box1 {
+            /* display: block; */
+            /* display: none; */
+            /* opacity: 0; */
+        }
+
+        .box2 {
+            /* display: none; */
+        }
+
+        @media (min-width:768px) {
+            .box1 {
+                /* display: block; */
+                /* display: none; */
+                /* opacity: 0; */
+            }
+
+            .box2 {
+                /* display: block; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-between">
+            <div class="mycard box1 d-none d-md-block">left card</div>
+            <div class="mycard box2 d-block d-md-block">right card</div>
+            <!-- <div class="mycard">box3</div> -->
+        </div>
+    </div>
+</body>
+
+</html>
